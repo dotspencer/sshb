@@ -6,11 +6,14 @@ var args = process.argv.splice(2);
 // List all bookmarks
 if(args.length == 1 && args[0] == 'list'){
   var list = require('./list.json');
+
+  console.log();
   for (var key in list) {
     if (list.hasOwnProperty(key)) {
       console.log(`${key} -> "${list[key]}"`);
     }
   }
+  console.log();
   return;
 }
 
