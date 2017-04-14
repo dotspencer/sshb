@@ -25,3 +25,5 @@ if(args.length == 1){
 
 // Invalid command
 f.showError();
+
+// sudo cp -r sshb/ /usr/local/dotspencer/sshb/
